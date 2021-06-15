@@ -1,3 +1,4 @@
+require('regenerator-runtime/runtime');
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
@@ -24,7 +25,6 @@ app.get('/data', async (req, res) => {
 });
 
 app.post('/data', async (req, res) => {
-  console.log(req.body);
   const tKPath = path.resolve(__dirname, '..', 'data', 'tKeeper.json');
   await writeFile(tKPath, JSON.stringify(req.body, null, 2));
   const tK = await readFile(tKPath);
@@ -32,6 +32,6 @@ app.post('/data', async (req, res) => {
   //   return res.json({ success: true });
 });
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
   process.stdout.write('Server started at port 5000\n');
 });
