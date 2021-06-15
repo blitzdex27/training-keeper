@@ -1,26 +1,4 @@
 {
-  "trainings": [
-    {
-      "id": "84040600-e064-4c42-b8f8-2ec7ccda137d",
-      "name": "Dexter",
-      "info": "d",
-      "dateTimeAdded": "2021-06-15T15:04:46.834Z",
-      "topics": [
-        {
-          "id": "8851f9f4-f692-438f-a29f-4e97fdbe5526",
-          "name": "Dexter",
-          "info": "d",
-          "dateTimeAdded": "2021-06-15T15:05:56.788Z"
-        }
-      ]
-    }
-  ],
-  "topics": [
-    {
-      "id": "8851f9f4-f692-438f-a29f-4e97fdbe5526",
-      "name": "Dexter",
-      "info": "d",
-      "dateTimeAdded": "2021-06-15T15:05:56.788Z"
-    }
-  ]
+  "trainings": [],
+  "topics": []
 }
